@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodemailer</title>
+    <link rel="stylesheet" type="text/css" href="email.css">
+      
+</head>
+
+<body>
+    <section>
+        <h1>Nodemailer</h1>
+        <div class="content">
+            <form class="nodemailer" action="/send" method="POST">
+                <div class="item">
+                    <label for="email" class="label">From:</label>
+                    <input type="email" class="input" name="email" placeholder="email id">
+                </div>
+                <div class="item">
+                    <label for="email" class="label">To:</label>
+                    <input type="email" class="input" name="email_to" placeholder="email id">
+                </div>
+                <div class="item">
+                    <label for="cc" class="label">Cc:</label>
+                    <input type="email" class="input" name="email_cc" placeholder="email for Cc">
+                </div>
+                <div class="item">
+                    <label for="Sub" class="label">Sub:</label>
+                    <input type="text" class="input" name="email_sub" placeholder="sub...">
+                </div>
+                <div class="item">
+                    <label for="password" class="label">Password:</label>
+                    <input type="password" class="input" name="password" placeholder="Enter Your Password">
+                </div>
+                <div class="item">
+                    <!-- <label for="text" class="text">Text:</label> -->
+                    <!-- <input type="text" class="write" name="message" placeholder="write..."> -->
+                    <textarea id="message" name="email_message" value="email_message" cols="30" rows="5" placeholder="Write here..."></textarea>
+                </div>
+                <div>
+                     <button type="submit" class="btn">send</button>
+
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
