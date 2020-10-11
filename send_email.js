@@ -15,7 +15,7 @@ module.exports = (router, nodemailer) => {
             service: 'gmail',
             auth: {
                 user: email_from,
-                pass: "rizu@143"
+                pass: email_password
             }
         });
 
